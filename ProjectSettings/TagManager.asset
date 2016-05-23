@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GM
+  - spawnPoint
+  - Slot
+  - Slots
+  - Hotbar
+  - CraftSystem
+  - ResultSlot
+  - DraggingItem
+  - Panel
+  - Item
+  - Canvas
+  - ItemIcon
+  - Tooltip
+  - EventSystem
+  - EquipmentSystem
+  - MainInventory
+  - Enemy
+  - CharSelect
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Obstacle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3979642145
+    locked: 0
+  - name: Below BELOW default
+    uniqueID: 458664851
+    locked: 0
+  - name: Below default
+    uniqueID: 226642595
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 325342175
+    locked: 0
+  - name: above all
+    uniqueID: 2083948337
+    locked: 0

@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 15efef526e4f8494987b44006254adba
+timeCreated: 1463567812
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spriteSheet-Edition_0
+    21300002: spriteSheet-Edition_1
+    21300004: spriteSheet-Edition_2
+    21300006: spriteSheet-Edition_3
+    21300008: spriteSheet-Edition_4
+    21300010: spriteSheet-Edition_5
+    21300012: melee_hand
+    21300014: spriteSheet-Edition_7
+    21300016: archer_hand
+    21300018: spriteSheet-Edition_9
+    21300020: wizard_hand
+    21300022: spriteSheet-Edition_11
+    21300024: normal_hand
+    21300026: spriteSheet-Edition_13
+    21300028: spriteSheet-Edition_14
+    21300030: spriteSheet-Edition_15
+    21300032: spriteSheet-Edition_16
+    21300034: spriteSheet-Edition_17
+    21300036: spriteSheet-Edition_18
+    21300038: spriteSheet-Edition_19
+    21300040: spriteSheet-Edition_20
+    21300042: spriteSheet-Edition_21
+    21300044: spriteSheet-Edition_22
+    21300046: spriteSheet-Edition_23
+    21300048: spriteSheet-Edition_24
+    21300050: spriteSheet-Edition_25
+    21300052: spriteSheet-Edition_26
+    21300054: spellcaster_hand
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 170
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: spriteSheet-Edition_0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2710
+        width: 132
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.421005, y: 88.337036}
+        - {x: -42.421005, y: 72.337036}
+        - {x: -42.421005, y: -70.662964}
+        - {x: -35.421005, y: -86.662964}
+        - {x: 42.578995, y: -86.662964}
+        - {x: 42.578995, y: 59.337036}
+        - {x: 29.578995, y: 88.337036}
+    - name: spriteSheet-Edition_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2699
+        width: 140
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.77585, y: 95.2749}
+        - {x: -44.77585, y: -93.7251}
+        - {x: 39.22415, y: -93.7251}
+        - {x: 46.22415, y: -86.7251}
+        - {x: 46.22415, y: 70.2749}
+        - {x: 6.2241516, y: 95.2749}
+    - name: spriteSheet-Edition_2
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2699
+        width: 140
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.227295, y: 107.7749}
+        - {x: -44.772705, y: 107.7749}
+        - {x: -44.772705, y: -106.2251}
+        - {x: 46.227295, y: -106.2251}
+        - {x: 46.227295, y: 87.7749}
+        - {x: 23.227295, y: 106.7749}
+    - name: spriteSheet-Edition_3
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 2699
+        width: 122
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.008423, y: 81.7749}
+        - {x: -38.991577, y: 81.7749}
+        - {x: -38.991577, y: -80.2251}
+        - {x: 31.008423, y: -80.2251}
+        - {x: 40.008423, y: -71.2251}
+        - {x: 40.008423, y: 52.774902}
+        - {x: 38.008423, y: 80.7749}
+    - name: spriteSheet-Edition_4
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 2539
+        width: 172
+        height: 562
+      alignment: 9
+      pivot: {x: 0.53527546, y: -0.20361806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.943237, y: 434.42468}
+        - {x: -58.943237, y: 392.42468}
+        - {x: -58.943237, y: 130.42468}
+        - {x: -39.943237, y: 73.42468}
+        - {x: 15.056763, y: 73.42468}
+        - {x: 52.056763, y: 122.42468}
+        - {x: 52.056763, y: 330.42468}
+        - {x: 28.056763, y: 434.42468}
+    - name: spriteSheet-Edition_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2000
+        width: 132
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.421005, y: 90.01257}
+        - {x: -42.421005, y: 82.01257}
+        - {x: -42.421005, y: -37.987427}
+        - {x: -37.421005, y: -89.98743}
+        - {x: 42.578995, y: -89.98743}
+        - {x: 42.578995, y: 72.01257}
+        - {x: 20.578995, y: 90.01257}
+    - name: melee_hand
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2199
+        width: 41
+        height: 41
+      alignment: 9
+      pivot: {x: -4.6969686, y: -0.08054854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: spriteSheet-Edition_7
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2000
+        width: 140
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.77585, y: 93.51257}
+        - {x: -44.77585, y: -30.487427}
+        - {x: -39.77585, y: -93.48743}
+        - {x: 41.22415, y: -93.48743}
+        - {x: 46.22415, y: -74.48743}
+        - {x: 46.22415, y: 70.51257}
+        - {x: 24.224152, y: 93.51257}
+    - name: archer_hand
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 2199
+        width: 40
+        height: 41
+      alignment: 9
+      pivot: {x: -4.5597506, y: 0.3464534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: spriteSheet-Edition_9
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2000
+        width: 140
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.772705, y: 106.01257}
+        - {x: -44.772705, y: -40.987427}
+        - {x: -35.772705, y: -105.98743}
+        - {x: 35.227295, y: -105.98743}
+        - {x: 46.227295, y: -88.98743}
+        - {x: 46.227295, y: 82.01257}
+        - {x: 38.227295, y: 106.01257}
+    - name: spellcaster_hand
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2199
+        width: 40
+        height: 41
+      alignment: 9
+      pivot: {x: -4.452573, y: -0.02436047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: spriteSheet-Edition_11
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2000
+        width: 100
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.929443, y: 81.01257}
+        - {x: -31.929443, y: 80.01257}
+        - {x: -31.929443, y: -80.98743}
+        - {x: 33.070557, y: -80.98743}
+        - {x: 33.070557, y: 81.01257}
+    - name: normal_hand
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 2199
+        width: 40
+        height: 41
+      alignment: 9
+      pivot: {x: -4.501132, y: 0.41950506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: spriteSheet-Edition_13
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 2000
+        width: 81
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.947632, y: 71.01257}
+        - {x: -25.947632, y: -51.987427}
+        - {x: -22.947632, y: -70.98743}
+        - {x: 10.052368, y: -70.98743}
+        - {x: 27.052368, y: 10.012573}
+        - {x: 27.052368, y: 70.01257}
+        - {x: 16.052368, y: 71.01257}
+    - name: spriteSheet-Edition_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1430
+        width: 121
+        height: 291
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.858932, y: 93.56897}
+        - {x: -38.858932, y: -93.43103}
+        - {x: 33.141068, y: -93.43103}
+        - {x: 39.141068, y: -91.43103}
+        - {x: 39.141068, y: 86.56897}
+        - {x: 32.141068, y: 93.56897}
+    - name: spriteSheet-Edition_15
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1430
+        width: 122
+        height: 291
+      alignment: 9
+      pivot: {x: -0.24639443, y: 0.4743539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.22357, y: 97.36029}
+        - {x: 64.22357, y: 93.36029}
+        - {x: 63.22357, y: 91.36029}
+        - {x: 50.22357, y: 98.36029}
+        - {x: 19.223572, y: 98.36029}
+        - {x: 19.223572, y: -88.63971}
+        - {x: 79.22357, y: -88.63971}
+        - {x: 97.22357, y: -79.63971}
+        - {x: 99.22357, y: -54.63971}
+        - {x: 99.22357, y: 67.36029}
+    - name: spriteSheet-Edition_16
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1430
+        width: 142
+        height: 291
+      alignment: 9
+      pivot: {x: -0.055633973, y: 0.4800027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.15961, y: 97.30493}
+        - {x: 17.159607, y: 97.30493}
+        - {x: 14.159607, y: 88.30493}
+        - {x: 5.159607, y: 51.30493}
+        - {x: 5.159607, y: -53.69507}
+        - {x: 10.159607, y: -89.69507}
+        - {x: 73.15961, y: -89.69507}
+        - {x: 83.15961, y: -87.69507}
+        - {x: 97.15961, y: -43.69507}
+        - {x: 97.15961, y: 89.30493}
+    - name: spriteSheet-Edition_17
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1429
+        width: 192
+        height: 291
+      alignment: 9
+      pivot: {x: 0.2274952, y: 0.47624537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.856445, y: 98.86487}
+        - {x: 16.856445, y: 98.86487}
+        - {x: 15.856445, y: 90.86487}
+        - {x: -28.143555, y: 17.864868}
+        - {x: -28.143555, y: -4.135132}
+        - {x: 10.856445, y: -89.13513}
+        - {x: 72.856445, y: -89.13513}
+        - {x: 82.856445, y: -86.13513}
+        - {x: 96.856445, y: -42.13513}
+        - {x: 96.856445, y: 90.86487}
+      - - {x: 30.856445, y: -34.13513}
+        - {x: -11.143555, y: 4.864868}
+        - {x: 9.856445, y: 25.864868}
+        - {x: 68.856445, y: -16.135132}
+    - name: spriteSheet-Edition_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1000
+        width: 121
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.078995, y: 45.006287}
+        - {x: -38.921005, y: 45.006287}
+        - {x: -38.921005, y: -19.993713}
+        - {x: -26.921005, y: -44.993713}
+        - {x: 32.078995, y: -44.993713}
+        - {x: 39.078995, y: -28.993713}
+        - {x: 39.078995, y: 23.006287}
+        - {x: 22.078995, y: 44.006287}
+    - name: spriteSheet-Edition_19
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1030
+        width: 140
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.77585, y: 29.76648}
+        - {x: -44.77585, y: -1.2335205}
+        - {x: -35.77585, y: -25.23352}
+        - {x: -23.775848, y: -29.23352}
+        - {x: 46.22415, y: -29.23352}
+        - {x: 46.22415, y: 0.7664795}
+        - {x: 13.224152, y: 29.76648}
+    - name: spriteSheet-Edition_20
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1009
+        width: 122
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35.99469, y: 37.284363}
+        - {x: -38.99469, y: 12.284363}
+        - {x: -38.99469, y: -34.715637}
+        - {x: -37.99469, y: -35.715637}
+        - {x: 35.00531, y: -35.715637}
+        - {x: 40.00531, y: -34.715637}
+        - {x: 40.00531, y: 19.284363}
+        - {x: 20.00531, y: 37.284363}
+    - name: spriteSheet-Edition_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 609
+        width: 132
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.421005, y: 33.98181}
+        - {x: -42.421005, y: 3.9818115}
+        - {x: -41.421005, y: -5.0181885}
+        - {x: -33.421005, y: -32.01819}
+        - {x: 33.578995, y: -32.01819}
+        - {x: 42.578995, y: -29.018188}
+        - {x: 42.578995, y: 33.98181}
+    - name: spriteSheet-Edition_22
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 600
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.922272, y: 33.203766}
+        - {x: -30.077728, y: 33.203766}
+        - {x: -32.07773, y: 30.203766}
+        - {x: -32.07773, y: -31.796234}
+        - {x: -29.077728, y: -32.796234}
+        - {x: 9.922272, y: -32.796234}
+        - {x: 21.922272, y: -30.796234}
+        - {x: 33.92227, y: -18.796234}
+        - {x: 33.92227, y: 29.203766}
+    - name: spriteSheet-Edition_23
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 600
+        width: 140
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5.227295, y: 42.703766}
+        - {x: -33.772705, y: 42.703766}
+        - {x: -44.772705, y: 12.703766}
+        - {x: -44.772705, y: -39.296234}
+        - {x: -31.772705, y: -42.296234}
+        - {x: 46.227295, y: -42.296234}
+        - {x: 46.227295, y: 26.703766}
+        - {x: 29.227295, y: 40.703766}
+    - name: spriteSheet-Edition_24
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 190
+        width: 101
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.08088, y: 27.481194}
+        - {x: -32.08088, y: 1.4811935}
+        - {x: -32.08088, y: -25.518806}
+        - {x: 33.91912, y: -25.518806}
+        - {x: 33.91912, y: -7.5188065}
+        - {x: 22.91912, y: 27.481194}
+    - name: spriteSheet-Edition_25
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 190
+        width: 101
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.077728, y: 27.481194}
+        - {x: -32.07773, y: 6.4811935}
+        - {x: -32.07773, y: -25.518806}
+        - {x: 33.92227, y: -25.518806}
+        - {x: 33.92227, y: 15.481194}
+        - {x: 20.922272, y: 27.481194}
+    - name: spriteSheet-Edition_26
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 190
+        width: 101
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.074585, y: 27.481194}
+        - {x: -32.074585, y: 6.4811935}
+        - {x: -32.074585, y: -25.518806}
+        - {x: 33.925415, y: -25.518806}
+        - {x: 33.925415, y: 15.481194}
+        - {x: 20.925415, y: 27.481194}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
