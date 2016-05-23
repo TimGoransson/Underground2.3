@@ -3,13 +3,19 @@ using System.Collections;
 
 public class EnemyRangedAttack : MonoBehaviour {
     float range = 100;
+    float timer;
+    float cooldown;
+
     public LayerMask whatToHit;
 
     GameObject target;
     public GameObject bossBullet;
+    
     // Use this for initialization
-    void Awake () {
-	
+    void Awake ()
+    {
+        cooldown = 1;
+        timer = cooldown;
 	}
 	
 	// Update is called once per frame
@@ -17,9 +23,10 @@ public class EnemyRangedAttack : MonoBehaviour {
     {
         if (target != null)
         {
+            timer -= Time.deltaTime;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position - transform.position, range, whatToHit);
             //Debug.DrawLine(transform.position, (target.transform.position - transform.position) * 100, Color.yellow);
-            if (hit.transform.tag == "Player")
+            if (hit.transform.tag == "Player" && timer <= 0)
             {
                 Debug.DrawLine(transform.position, hit.point, Color.red);
                 GameObject newBullet = Object.Instantiate(bossBullet, transform.position, transform.rotation) as GameObject;
@@ -27,6 +34,7 @@ public class EnemyRangedAttack : MonoBehaviour {
                 Vector2 fireDirection = target.transform.position-transform.position;
                 fireDirection.Normalize();
                 rb.velocity = fireDirection;
+                timer = cooldown;
             }
             else
             {
