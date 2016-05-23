@@ -22,9 +22,9 @@ MonoBehaviour:
     attributeValue: 30
   - attributeName: MaxHealth
     attributeValue: 0
-  - attributeName: 536c6f7473
+  - attributeName: ManaDrain
     attributeValue: 0
-  - attributeName: 
+  - attributeName: LifeSteal
     attributeValue: 0
   - attributeName: Dexterity
     attributeValue: 0
