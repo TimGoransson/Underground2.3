@@ -29,7 +29,8 @@ public class BossBulletController : MonoBehaviour {
             other.SendMessageUpwards("Damage", damage);
             Destroy(gameObject);
         }
-        else
+
+        else if (other.tag != "Enemy")
         {
             Destroy(gameObject);
         }
