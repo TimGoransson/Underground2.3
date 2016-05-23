@@ -77,6 +77,6 @@ public class Enemy : MonoBehaviour
     public void Damage(int damage)
     {
             stats.currentHealth -= damage;
-            
+            //if()
     }
 }

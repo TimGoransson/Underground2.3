@@ -30,7 +30,9 @@ public class PlayerInventory : MonoBehaviour
     float maxMana = 100;
     public float maxDamage;
     float maxArmor = 0;
-    
+    float lifeStealValue;
+    public bool lifeSteal = false;
+
     public float currentHealth = 100;
     float currentMana = 100;
     float currentDamage = 0;
@@ -274,6 +276,11 @@ public class PlayerInventory : MonoBehaviour
                     Dex += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Strength")
                     Str += item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "LifeSteal")
+            {
+                lifeStealValue += item.itemAttributes[i].attributeValue;
+                lifeSteal = true;
+            }
 
             Debug.Log("Dex = " + Dex);
             Debug.Log("Str = " + Str);
