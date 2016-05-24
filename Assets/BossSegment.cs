@@ -70,9 +70,11 @@ public class BossSegment : MonoBehaviour {
         if (stats.currentHealth <= 0)
         {
             bossAI.rotationSpeed *= 2;
-            GetComponent<CircleCollider2D>().enabled = true;
-                        
-            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            
+            //GetComponent<CircleCollider2D>().enabled = true;
+            Destroy(gameObject);
+            //lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            //Destroy(gameObject);
         }
         if (statusIndicator != null)
         {
@@ -82,14 +84,13 @@ public class BossSegment : MonoBehaviour {
     public void Damage(int damage)
     {
         stats.currentHealth -= damage;
-        //if()
     }
-    void OnTriggerEnter2D (Collider2D other)
-    {
-        if (other.tag == "Enemy")
-        {
-            other.SendMessageUpwards("ActivateGun");
-            Destroy(gameObject);
-        }
-    }
+    //void OnTriggerStay2D (Collider2D other)
+    //{
+    //    if (other.tag == "Enemy")
+    //    {
+    //        other.SendMessageUpwards("Activate");
+    //        Destroy(gameObject);
+    //    }
+    //}
 }

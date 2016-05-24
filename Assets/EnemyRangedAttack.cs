@@ -56,7 +56,10 @@ public class EnemyRangedAttack : MonoBehaviour {
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        target = null;
-        enemyAI.enabled = true;
+        if (other.tag == "Player")
+        {
+            target = null;
+            enemyAI.enabled = true;
+        }       
     }
 }

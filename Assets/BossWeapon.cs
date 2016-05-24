@@ -4,11 +4,13 @@ using System.Collections;
 public class BossWeapon : MonoBehaviour {
     float timer;
     public float cooldown;
+    public float speedMultiplyer;
     public GameObject bossBullet;
     Transform firePoint;
 	void Awake () 
     {
         timer = cooldown;
+        speedMultiplyer = 1;
         firePoint = transform.FindChild("FirePoint");
         if (firePoint == null)
         {
@@ -37,6 +39,7 @@ public class BossWeapon : MonoBehaviour {
         GameObject newBullet = Object.Instantiate(bossBullet, firePointPosition, firePoint.rotation) as GameObject;
         Rigidbody2D rb = newBullet.GetComponent<Rigidbody2D>();
         rb.velocity = fireDirection;
+        newBullet.GetComponent<BossBulletController>().speed *= speedMultiplyer;
         newBullet.transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Rad2Deg * Mathf.Atan2(fireDirection.y, fireDirection.x));
     }
 }

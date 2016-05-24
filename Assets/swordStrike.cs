@@ -14,13 +14,13 @@ public class swordStrike : MonoBehaviour {
     void Update () {
 	
 	}
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
 
         fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage;
-        if (other.tag == "Enemy")
+        if (other.collider.tag == "Enemy")
         {
-            other.SendMessageUpwards("Damage", fullDamage);
+            other.collider.SendMessageUpwards("Damage", fullDamage);
             Debug.Log("damage = " + fullDamage);
         }
 

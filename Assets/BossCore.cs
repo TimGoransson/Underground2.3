@@ -9,13 +9,13 @@ public class BossCore : MonoBehaviour {
     float damage = 10;
     
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        other.SendMessageUpwards("Damage", damage);
-        Debug.Log("Hit");
-        //Destroy(gameObject);
-        //Destroy(other.gameObject);
-    }
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    other.SendMessageUpwards("Damage", damage);
+    //    Debug.Log("Hit");
+    //    //Destroy(gameObject);
+    //    //Destroy(other.gameObject);
+    //}
     public void Awake()
     {
         currentHealth = maxHealth;        
@@ -30,10 +30,10 @@ public class BossCore : MonoBehaviour {
             
         }
     }
-    public void Damage(int damage)
-    {
-        currentHealth -= damage;
-    }
+    //public void Damage(int damage)
+    //{
+    //    currentHealth -= damage;
+    //}
 
     
 }
