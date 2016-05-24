@@ -226,8 +226,6 @@ GameObject:
   - 4: {fileID: 61281381}
   - 212: {fileID: 61281384}
   - 114: {fileID: 61281383}
-  - 61: {fileID: 61281382}
-  - 114: {fileID: 61281385}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Enemy
@@ -248,20 +246,6 @@ Transform:
   - {fileID: 1657542028}
   m_Father: {fileID: 1117555004}
   m_RootOrder: 0
---- !u!61 &61281382
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61281380}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.00000047683716, y: 0.00000011920929}
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.25000003}
 --- !u!114 &61281383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d2228ac17583642a7d696a0078e621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.75
+  cooldown: 0.3
+  speedMultiplyer: 0
   bossBullet: {fileID: 126674, guid: e1257329dddc1f149a68af678c7e4ffd, type: 2}
 --- !u!212 &61281384
 SpriteRenderer:
@@ -307,17 +292,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &61281385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61281380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44860409ce2958343bc4cd36dc01ec01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &67513118 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 189692, guid: 9cea38f3f81472547b812318fad95bf4, type: 2}
@@ -349,8 +323,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootSpawner: {fileID: 0}
   stats:
-    maxHealth: 100
+    maxHealth: 10
   statusIndicator: {fileID: 0}
+--- !u!114 &67513124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67513118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe2b6c848c332046b156e2703564dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &70399870
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,8 +444,6 @@ GameObject:
   - 4: {fileID: 84729253}
   - 212: {fileID: 84729257}
   - 114: {fileID: 84729256}
-  - 61: {fileID: 84729255}
-  - 114: {fileID: 84729254}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Enemy
@@ -481,31 +464,6 @@ Transform:
   - {fileID: 124711056}
   m_Father: {fileID: 1043590486}
   m_RootOrder: 0
---- !u!114 &84729254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84729252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44860409ce2958343bc4cd36dc01ec01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &84729255
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84729252}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.00000047683716, y: 0.00000011920929}
-  serializedVersion: 2
-  m_Size: {x: 0.5000001, y: 0.2500001}
 --- !u!114 &84729256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d2228ac17583642a7d696a0078e621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.75
+  cooldown: 0.3
+  speedMultiplyer: 0
   bossBullet: {fileID: 126674, guid: e1257329dddc1f149a68af678c7e4ffd, type: 2}
 --- !u!212 &84729257
 SpriteRenderer:
@@ -1024,8 +983,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootSpawner: {fileID: 0}
   stats:
-    maxHealth: 100
+    maxHealth: 10
   statusIndicator: {fileID: 0}
+--- !u!114 &211022975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211022969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe2b6c848c332046b156e2703564dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221311284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,8 +1208,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootSpawner: {fileID: 0}
   stats:
-    maxHealth: 100
+    maxHealth: 10
   statusIndicator: {fileID: 0}
+--- !u!114 &271673297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 271673291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe2b6c848c332046b156e2703564dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &272558447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,7 +3293,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11444686, guid: 04dc98d87aaa142408c1ef47a62631d4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 04dc98d87aaa142408c1ef47a62631d4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &728370345
@@ -7773,8 +7755,6 @@ GameObject:
   - 4: {fileID: 1427665301}
   - 212: {fileID: 1427665304}
   - 114: {fileID: 1427665303}
-  - 61: {fileID: 1427665302}
-  - 114: {fileID: 1427665305}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Enemy
@@ -7795,20 +7775,6 @@ Transform:
   - {fileID: 1988739148}
   m_Father: {fileID: 1214983709}
   m_RootOrder: 0
---- !u!61 &1427665302
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427665300}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: -0.00000017881393, y: 0.00000023841858}
-  serializedVersion: 2
-  m_Size: {x: 0.50000006, y: 0.2500001}
 --- !u!114 &1427665303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7821,7 +7787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d2228ac17583642a7d696a0078e621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.75
+  cooldown: 0.3
+  speedMultiplyer: 0
   bossBullet: {fileID: 126674, guid: e1257329dddc1f149a68af678c7e4ffd, type: 2}
 --- !u!212 &1427665304
 SpriteRenderer:
@@ -7854,17 +7821,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &1427665305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1427665300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44860409ce2958343bc4cd36dc01ec01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1430115852 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 156666, guid: 3b5fb47957c6bc84fad183d98a6561b5, type: 2}
@@ -9162,8 +9118,6 @@ GameObject:
   - 4: {fileID: 1698990029}
   - 212: {fileID: 1698990032}
   - 114: {fileID: 1698990031}
-  - 61: {fileID: 1698990030}
-  - 114: {fileID: 1698990033}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Enemy
@@ -9184,20 +9138,6 @@ Transform:
   - {fileID: 1568116658}
   m_Father: {fileID: 1942408738}
   m_RootOrder: 0
---- !u!61 &1698990030
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1698990028}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0.00000047683716}
-  serializedVersion: 2
-  m_Size: {x: 0.49999997, y: 0.24999999}
 --- !u!114 &1698990031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9210,7 +9150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d2228ac17583642a7d696a0078e621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.75
+  cooldown: 0.3
+  speedMultiplyer: 0
   bossBullet: {fileID: 126674, guid: e1257329dddc1f149a68af678c7e4ffd, type: 2}
 --- !u!212 &1698990032
 SpriteRenderer:
@@ -9243,17 +9184,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &1698990033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1698990028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44860409ce2958343bc4cd36dc01ec01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1703013716
 GameObject:
   m_ObjectHideFlags: 0
@@ -10905,8 +10835,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootSpawner: {fileID: 0}
   stats:
-    maxHealth: 100
+    maxHealth: 10
   statusIndicator: {fileID: 0}
+--- !u!114 &2134876952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134876946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe2b6c848c332046b156e2703564dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2140643433
 GameObject:
   m_ObjectHideFlags: 0

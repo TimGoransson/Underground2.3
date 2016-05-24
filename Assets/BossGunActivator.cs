@@ -9,12 +9,15 @@ public class BossGunActivator : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
+
 	
 	}
-    void ActivateGun()
+    void Activate()
     {
         GetComponent<BossWeapon>().enabled = true;
         GetComponent<BoxCollider2D>().enabled = false;
     }
+    
 }
