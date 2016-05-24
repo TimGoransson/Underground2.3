@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BossCore : MonoBehaviour {
     float currentHealth = 10;
-    float maxHealth = 30;
+    float maxHealth = 200;
 
     public EnemyLootDrop lootSpawner;
     float damage = 10;
@@ -18,7 +18,7 @@ public class BossCore : MonoBehaviour {
     }
     public void Awake()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth;        
         //inventoryItemList = (ItemDataBaseList)Resources.Load("ItemDatabase");
     }
     public void Update()
@@ -34,4 +34,6 @@ public class BossCore : MonoBehaviour {
     {
         currentHealth -= damage;
     }
+
+    
 }

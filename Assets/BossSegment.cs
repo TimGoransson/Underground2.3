@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour
-{
-    
+public class BossSegment : MonoBehaviour {
+
     [System.Serializable]
     public class EnemyStats
     {
         public float maxHealth = 100;
-        
-        private float _curhealth=10;
 
-        
+        private float _curhealth = 10;
+
+
         public float currentHealth
         {
             get { return _curhealth; }
-            set { _curhealth = Mathf.Clamp(value, 0, maxHealth);  }
+            set { _curhealth = Mathf.Clamp(value, 0, maxHealth); }
 
         }
 
@@ -24,11 +23,11 @@ public class Enemy : MonoBehaviour
             currentHealth = maxHealth;
             Debug.Log(currentHealth);
         }
-    
+
     }
 
     public EnemyLootDrop lootSpawner;
-    
+
     float damage = 5;
     float hitCd;
     float hitTimer;
@@ -39,7 +38,7 @@ public class Enemy : MonoBehaviour
         {
             hitTimer = hitCd;
             other.collider.SendMessageUpwards("Damage", damage);
-            
+
         }
         Debug.Log("Hit");
 
@@ -50,12 +49,16 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private StatusIndicator statusIndicator;
 
+    BossAI bossAI;
+
     void Start()
     {
         hitCd = 1.5f;
         hitTimer = hitCd;
-        stats.Init();   
-        
+        bossAI = transform.parent.GetComponent<BossAI>();
+
+        stats.Init();
+
         if (statusIndicator != null)
         {
             statusIndicator.SetHealth(stats.currentHealth, stats.maxHealth);
@@ -66,7 +69,9 @@ public class Enemy : MonoBehaviour
         hitTimer -= Time.deltaTime;
         if (stats.currentHealth <= 0)
         {
-            Destroy(gameObject);
+            bossAI.rotationSpeed *= 2;
+            GetComponent<CircleCollider2D>().enabled = true;
+                        
             lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
         }
         if (statusIndicator != null)
@@ -76,7 +81,15 @@ public class Enemy : MonoBehaviour
     }
     public void Damage(int damage)
     {
-            stats.currentHealth -= damage;
-            //if()
+        stats.currentHealth -= damage;
+        //if()
+    }
+    void OnTriggerEnter2D (Collider2D other)
+    {
+        if (other.tag == "Enemy")
+        {
+            other.SendMessageUpwards("ActivateGun");
+            Destroy(gameObject);
+        }
     }
 }

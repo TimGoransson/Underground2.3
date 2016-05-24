@@ -10,13 +10,15 @@ public class EnemyRangedAttack : MonoBehaviour {
 
     GameObject target;
     public GameObject bossBullet;
-    
+    private EnemyAI enemyAI;
+
     // Use this for initialization
     void Awake ()
     {
         cooldown = 1;
         timer = cooldown;
-	}
+        enemyAI = GetComponentInParent<EnemyAI>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -47,12 +49,14 @@ public class EnemyRangedAttack : MonoBehaviour {
         if (other.tag == "Player")
         {
             target = GameObject.FindGameObjectWithTag("Player");
+            enemyAI.enabled = false;
             //RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position - transform.position, range, whatToHit);
             //Debug.DrawLine(transform.position, (target.transform.position - transform.position) * 100, Color.yellow);
         }        
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        target = null; 
+        target = null;
+        enemyAI.enabled = true;
     }
 }

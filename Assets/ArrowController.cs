@@ -23,18 +23,18 @@ public class ArrowController : MonoBehaviour {
             timer = 2;
         }
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
 
         fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage 
             + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().Str;
-        if (other.tag == "Enemy")
+        if (other.collider.tag == "Enemy")
         {
-            other.SendMessageUpwards("Damage", fullDamage);
+            other.collider.SendMessageUpwards("Damage", fullDamage);
             Destroy(gameObject);
-            Debug.Log("dammage = " + fullDamage);
+            Debug.Log("damage = " + fullDamage);
         }
-        else if (other.tag != "Enemy")
+        else if (other.collider.tag != "Enemy")
         {
             Destroy(gameObject);
         }

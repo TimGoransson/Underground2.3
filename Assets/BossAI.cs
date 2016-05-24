@@ -15,6 +15,7 @@ public class BossAI : MonoBehaviour {
     {
         timer = cooldown;
         speed = 3;
+        rotationSpeed = 50;
         rb = GetComponent<Rigidbody2D>();
 	}
 	
@@ -38,6 +39,8 @@ public class BossAI : MonoBehaviour {
                 rb.velocity = new Vector2(Random.Range(0, 4), Random.Range(0, 4));
                 timer = cooldown;
                 
+
+                
             }
         }
         else
@@ -47,10 +50,19 @@ public class BossAI : MonoBehaviour {
         }
 
         transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+        Debug.Log(rotationSpeed + " ROTSPEED");
         //if (timer <= 0)
         //{
         //    rb.velocity = new Vector2(Random.Range(0, 4), Random.Range(0, 4));
         //    timer = 3;
         //}
-	}
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Obstacle")
+        {
+            Debug.Log("Wat Even");
+            GetComponent<Rigidbody2D>().velocity *= -1;
+        }
+    }
 }
