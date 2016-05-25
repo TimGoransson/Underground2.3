@@ -30,7 +30,7 @@ public class PlayerInventory : MonoBehaviour
     float maxMana = 100;
     public float maxDamage;
     float maxArmor = 0;
-    float lifeStealValue;
+    public float lifeStealValue;
     public bool lifeSteal = false;
 
     public float currentHealth = 100;

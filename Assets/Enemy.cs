@@ -77,6 +77,10 @@ public class Enemy : MonoBehaviour
     public void Damage(int damage)
     {
             stats.currentHealth -= damage;
-            //if()
+            if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeSteal == true)
+            {
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().currentHealth += GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeStealValue;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeSteal = false;
+            }
     }
 }
