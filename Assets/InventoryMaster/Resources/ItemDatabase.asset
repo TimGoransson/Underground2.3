@@ -219,4 +219,4 @@ MonoBehaviour:
     rarity: 0
     itemAttributes:
     - attributeName: Health
-      attributeValue: 0
+      attributeValue: 10
