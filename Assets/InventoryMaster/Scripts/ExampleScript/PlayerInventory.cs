@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -350,6 +351,7 @@ public class PlayerInventory : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("KILL PLAYER");
+            SceneManager.LoadScene(5);
             Destroy(gameObject);
         }
     }
