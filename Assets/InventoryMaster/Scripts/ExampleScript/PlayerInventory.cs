@@ -351,7 +351,7 @@ public class PlayerInventory : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("KILL PLAYER");
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
             Destroy(transform.parent.gameObject);
         }
     }
