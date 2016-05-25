@@ -176,7 +176,7 @@ public class PlayerInventory : MonoBehaviour
             UpdateHPBar();
 
 
-            manaText = HPMANACanvas.transform.GetChild(2).GetChild(0).GetComponent<Text>();
+            //manaText = HPMANACanvas.transform.GetChild(2).GetChild(0).GetComponent<Text>();
             manaImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
            
 

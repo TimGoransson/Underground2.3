@@ -68,14 +68,14 @@ public class MenuManager : MonoBehaviour {
     public void Dexterity(GameObject CanvasCharScreen)
     {
         Dex = Random.Range(2, 6);
-        dexValue = CanvasCharScreen.transform.GetChild(5).GetChild(0).GetComponent<Text>();
+        dexValue = CanvasCharScreen.transform.GetChild(4).GetChild(0).GetComponent<Text>();
         dexValue.text = (" " + Dex);
     }
 
     public void Strenght(GameObject CanvasCharScreen)
     {
         Str = Random.Range(2, 6);
-        strValue = CanvasCharScreen.transform.GetChild(4).GetChild(0).GetComponent<Text>();
+        strValue = CanvasCharScreen.transform.GetChild(3).GetChild(0).GetComponent<Text>();
         strValue.text = (""+Str);
     }
 
