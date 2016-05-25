@@ -352,7 +352,7 @@ public class PlayerInventory : MonoBehaviour
         {
             Debug.Log("KILL PLAYER");
             SceneManager.LoadScene(5);
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
     // Update is called once per frame
