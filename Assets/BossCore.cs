@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class BossCore : MonoBehaviour {
-    float currentHealth = 10;
-    float maxHealth = 5;
+    float currentHealth = 200;
+    float maxHealth = 250;
 
     public EnemyLootDrop lootSpawner;
     float damage = 10;

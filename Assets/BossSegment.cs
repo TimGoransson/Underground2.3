@@ -8,7 +8,7 @@ public class BossSegment : MonoBehaviour {
     {
         public float maxHealth = 100;
 
-        private float _curhealth = 10;
+        private float _curhealth = 50;
 
 
         public float currentHealth
