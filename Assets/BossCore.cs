@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BossCore : MonoBehaviour {
     float currentHealth = 10;
-    float maxHealth = 200;
+    float maxHealth = 5;
 
     public EnemyLootDrop lootSpawner;
     float damage = 10;
@@ -26,14 +27,15 @@ public class BossCore : MonoBehaviour {
         if (currentHealth <= 0)
         {
             Destroy(transform.parent.gameObject);
-            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            //lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             
         }
     }
-    //public void Damage(int damage)
-    //{
-    //    currentHealth -= damage;
-    //}
+    public void Damage(int damage)
+    {
+        currentHealth -= damage;
+    }
 
     
 }
