@@ -24,6 +24,7 @@ TagManager:
   - CharSelect
   - Obstacle
   - PlayerMaster
+  - Bullet
   layers:
   - Default
   - TransparentFX

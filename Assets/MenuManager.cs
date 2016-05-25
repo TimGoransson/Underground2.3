@@ -2,9 +2,10 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuManager : MonoBehaviour {
+public class MenuManager : MonoBehaviour
+{
 
-	// Use this for initialization
+    // Use this for initialization
     public static bool SelectedSword;
     public static bool SelectedBow;
     public static bool SelectedMagic;
@@ -17,18 +18,18 @@ public class MenuManager : MonoBehaviour {
     Text dexValue;
     Text strValue;
 
-    
-    
-	public void StartGame () 
+
+
+    public void StartGame()
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-	
-	}
+
+    }
     public void OnTriggerEnter2D(Collider2D other)
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        
+
     }
     public void QuitGame()
     {
@@ -41,7 +42,14 @@ public class MenuManager : MonoBehaviour {
     }
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SelectedBow)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        if(SelectedSword)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
     public void PlayAgain()
     {
@@ -80,7 +88,7 @@ public class MenuManager : MonoBehaviour {
     {
         Str = Random.Range(2, 6);
         strValue = CanvasCharScreen.transform.GetChild(3).GetChild(0).GetComponent<Text>();
-        strValue.text = (""+Str);
+        strValue.text = ("" + Str);
     }
 
     public void Health(GameObject CanvasCharScreen)
@@ -95,9 +103,10 @@ public class MenuManager : MonoBehaviour {
     //    manaValue = CanvasCharScreen.transform.GetChild(3).GetChild(0).GetComponent<Text>();
     //    manaValue.text = ("" + mana);
     //}
-    
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }

@@ -3925,6 +3925,10 @@ Prefab:
       propertyPath: m_Name
       value: Crate (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -5266,6 +5270,10 @@ Prefab:
       propertyPath: m_Name
       value: Crate (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -11171,6 +11179,10 @@ Prefab:
       propertyPath: m_Name
       value: Crate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -11867,6 +11879,10 @@ Prefab:
       propertyPath: m_Name
       value: Crate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -19877,6 +19893,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -23173,7 +23193,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1c75511bc78681c4da873215f3f208cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebecbedc6e4af0a41834f18d2c10e3a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24091,6 +24111,10 @@ Prefab:
       propertyPath: m_Name
       value: Crate (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -35688,6 +35712,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
   m_IsPrefabParent: 0
@@ -47912,6 +47940,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     - target: {fileID: 113394, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
       propertyPath: m_Name
       value: Crate (2)
@@ -50953,6 +50985,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11414026, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 93025836}
     - target: {fileID: 113394, guid: e189d246282d32a479f3b0e5121e8b8a, type: 2}
       propertyPath: m_Name
       value: Crate (7)
