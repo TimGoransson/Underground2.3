@@ -2419,6 +2419,7 @@ MonoBehaviour:
   Str: 0
   Dex: 0
   maxDamage: 0
+  lifeStealValue: 0
   lifeSteal: 0
   currentHealth: 100
 --- !u!114 &11409046
