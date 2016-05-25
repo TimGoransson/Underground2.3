@@ -80,7 +80,8 @@ public class Enemy : MonoBehaviour
             if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeSteal == true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().currentHealth += GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeStealValue;
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeSteal = false;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().UpdateHPBar();
+                Debug.Log("Lifesteal");
             }
     }
 }
