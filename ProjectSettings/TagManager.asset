@@ -25,6 +25,7 @@ TagManager:
   - Obstacle
   - PlayerMaster
   - Bullet
+  - Sword
   layers:
   - Default
   - TransparentFX

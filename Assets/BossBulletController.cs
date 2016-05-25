@@ -31,7 +31,7 @@ public class BossBulletController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if (other.tag != "Enemy")
+        else if (other.tag != "Enemy" && other.tag != "Sword" && other.tag != "Bullet")
         {
             Destroy(gameObject);
         }
