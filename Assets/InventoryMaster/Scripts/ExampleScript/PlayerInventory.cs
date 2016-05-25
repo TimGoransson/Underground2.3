@@ -355,6 +355,11 @@ public class PlayerInventory : MonoBehaviour
             Destroy(transform.parent.gameObject);
         }
     }
+
+    public void Destroy()
+    {
+        Destroy(transform.parent.gameObject);
+    }
     // Update is called once per frame
     void Update()
     {

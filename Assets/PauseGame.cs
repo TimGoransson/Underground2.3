@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PauseGame : MonoBehaviour
         {
             //pauseChild = transform.Find("resumeButton");
             transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+            transform.GetChild(0).GetChild(2).gameObject.SetActive(true);
         }
 
     }
@@ -29,6 +31,14 @@ public class PauseGame : MonoBehaviour
 
         transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
 
+    }
+
+    public void Quit()
+    {
+        Resume();
+        SceneManager.LoadScene(0);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().Destroy();
+        transform.GetChild(0).GetChild(2).gameObject.SetActive(false);
     }
 
     // Update is called once per frame
