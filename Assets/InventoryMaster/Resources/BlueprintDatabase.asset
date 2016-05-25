@@ -90,10 +90,10 @@ MonoBehaviour:
         attributeValue: 10
     amountOfFinalItem: 0
     timeToCraft: 0
-  - ingredients: 0300000006000000
+  - ingredients: 0500000003000000
     amount: 0100000001000000
     finalItem:
-      itemName: Lifesteal Ring
+      itemName: Liferegen Ring
       itemID: 10
       itemDesc: Gives Lifesteal
       itemIcon: {fileID: 21300026, guid: 15efef526e4f8494987b44006254adba, type: 3}
@@ -107,5 +107,72 @@ MonoBehaviour:
       itemAttributes:
       - attributeName: LifeSteal
         attributeValue: 5
+    amountOfFinalItem: 0
+    timeToCraft: 0
+  - ingredients: 0600000003000000
+    amount: 0300000003000000
+    finalItem:
+      itemName: Super Sword
+      itemID: 12
+      itemDesc: It's Super
+      itemIcon: {fileID: 21300008, guid: 15efef526e4f8494987b44006254adba, type: 3}
+      itemModel: {fileID: 0}
+      itemValue: 1
+      itemType: 1
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: Damage
+        attributeValue: 30
+      - attributeName: Dexterity
+        attributeValue: 20
+      - attributeName: Strenght
+        attributeValue: 30
+      - attributeName: LifeSteal
+        attributeValue: 20
+    amountOfFinalItem: 0
+    timeToCraft: 0
+  - ingredients: 0600000004000000
+    amount: 0300000003000000
+    finalItem:
+      itemName: Super Bow
+      itemID: 13
+      itemDesc: It's super
+      itemIcon: {fileID: 0}
+      itemModel: {fileID: 0}
+      itemValue: 1
+      itemType: 11
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: 
+        attributeValue: 30
+      - attributeName: 
+        attributeValue: 20
+      - attributeName: 
+        attributeValue: 30
+    amountOfFinalItem: 0
+    timeToCraft: 0
+  - ingredients: 0100000002000000
+    amount: 0100000001000000
+    finalItem:
+      itemName: Health Potion
+      itemID: 14
+      itemDesc: Your guess is as good as mine...
+      itemIcon: {fileID: 21300000, guid: 69d3ca2cf6b078648833115f3e66c660, type: 3}
+      itemModel: {fileID: 0}
+      itemValue: 1
+      itemType: 0
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: Health
+        attributeValue: 0
     amountOfFinalItem: 0
     timeToCraft: 0
