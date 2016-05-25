@@ -48,7 +48,7 @@ MonoBehaviour:
         attributeValue: 10
       - attributeName: Damage
         attributeValue: 5
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 0700000004000000
     amount: 0100000001000000
@@ -69,7 +69,7 @@ MonoBehaviour:
         attributeValue: 10
       - attributeName: Damage
         attributeValue: 5
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 03000000
     amount: 02000000
@@ -88,7 +88,7 @@ MonoBehaviour:
       itemAttributes:
       - attributeName: MaxHealth
         attributeValue: 10
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 0500000003000000
     amount: 0100000001000000
@@ -107,7 +107,7 @@ MonoBehaviour:
       itemAttributes:
       - attributeName: LifeSteal
         attributeValue: 5
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 0600000003000000
     amount: 0300000003000000
@@ -132,7 +132,7 @@ MonoBehaviour:
         attributeValue: 30
       - attributeName: LifeSteal
         attributeValue: 20
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 0600000004000000
     amount: 0300000003000000
@@ -155,7 +155,7 @@ MonoBehaviour:
         attributeValue: 20
       - attributeName: 
         attributeValue: 30
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
   - ingredients: 0100000002000000
     amount: 0100000001000000
@@ -174,5 +174,5 @@ MonoBehaviour:
       itemAttributes:
       - attributeName: Health
         attributeValue: 0
-    amountOfFinalItem: 0
+    amountOfFinalItem: 1
     timeToCraft: 0
