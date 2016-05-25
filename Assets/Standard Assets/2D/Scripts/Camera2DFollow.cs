@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace UnityStandardAssets._2D
 {
+    [RequireComponent(typeof(Camera2DFollow))]
     public class Camera2DFollow : MonoBehaviour
     {
         public Transform target;

@@ -1524,6 +1524,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470278}
+  - 114: {fileID: 11407940}
   m_Layer: 0
   m_Name: SwordPlayer
   m_TagString: Untagged
@@ -2389,6 +2390,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11407940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0b474f2889c3c469de0cc085dc031d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11408318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2407,6 +2419,7 @@ MonoBehaviour:
   Str: 0
   Dex: 0
   maxDamage: 0
+  lifeSteal: 0
   currentHealth: 100
 --- !u!114 &11409046
 MonoBehaviour:
