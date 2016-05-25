@@ -51,7 +51,7 @@ MonoBehaviour:
   - itemName: Iron
     itemID: 3
     itemDesc: for more crafting
-    itemIcon: {fileID: 21300000, guid: 0626b924325d1c34cafa6b22297f4e4f, type: 3}
+    itemIcon: {fileID: 21300000, guid: ce6eab0b72d2eca47aee1fb93baefbae, type: 3}
     itemModel: {fileID: 107562, guid: e475616f4fc7bed4f9cbb129444b65d1, type: 2}
     itemValue: 1
     itemType: 12
@@ -87,7 +87,7 @@ MonoBehaviour:
   - itemName: Red Stone
     itemID: 6
     itemDesc: For Lifesteal
-    itemIcon: {fileID: 21300000, guid: 902e87e86233fb94287940a845d16254, type: 3}
+    itemIcon: {fileID: 21300054, guid: 15efef526e4f8494987b44006254adba, type: 3}
     itemModel: {fileID: 172392, guid: 729982e498cab2b439e68e1d15e26de2, type: 2}
     itemValue: 1
     itemType: 0
