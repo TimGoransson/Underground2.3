@@ -1447,26 +1447,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &185216
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 496030}
-  - 20: {fileID: 2065768}
-  - 92: {fileID: 9233004}
-  - 124: {fileID: 12486772}
-  - 81: {fileID: 8131316}
-  - 114: {fileID: 11448836}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &190906
 GameObject:
   m_ObjectHideFlags: 1
@@ -1527,7 +1507,7 @@ GameObject:
   - 114: {fileID: 11407940}
   m_Layer: 0
   m_Name: SwordPlayer
-  m_TagString: Untagged
+  m_TagString: PlayerMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1699,7 +1679,7 @@ Transform:
   m_LocalScale: {x: 0.56448287, y: 0.5644836, z: 1}
   m_Children: []
   m_Father: {fileID: 499820}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!4 &425192
 Transform:
   m_ObjectHideFlags: 1
@@ -1787,18 +1767,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 499820}
   m_RootOrder: 4
---- !u!4 &496030
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 0.56448287, y: 0.5644837, z: 1}
-  m_Children: []
-  m_Father: {fileID: 499820}
-  m_RootOrder: 8
 --- !u!4 &499820
 Transform:
   m_ObjectHideFlags: 1
@@ -1817,44 +1785,9 @@ Transform:
   - {fileID: 444140}
   - {fileID: 422546}
   - {fileID: 445092}
-  - {fileID: 496030}
   - {fileID: 425064}
   m_Father: {fileID: 470278}
   m_RootOrder: 0
---- !u!20 &2065768
-Camera:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 7.742186
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!50 &5058116
 Rigidbody2D:
   serializedVersion: 2
@@ -2012,20 +1945,6 @@ EdgeCollider2D:
   - {x: -0.2384996, y: 1.5001782}
   - {x: -0.23792739, y: 1.5682327}
   - {x: -0.29121494, y: 1.567465}
---- !u!81 &8131316
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_Enabled: 1
---- !u!92 &9233004
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_Enabled: 1
 --- !u!95 &9557302
 Animator:
   serializedVersion: 3
@@ -3692,22 +3611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
---- !u!114 &11448836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 499820}
-  damping: 0
-  lookAheadFactor: 0
-  lookAheadReturnSpeed: 0.5
-  lookAheadMoveThreshold: 0.1
 --- !u!114 &11448974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5342,13 +5245,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!124 &12486772
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185216}
-  m_Enabled: 1
 --- !u!212 &21207826
 SpriteRenderer:
   m_ObjectHideFlags: 1

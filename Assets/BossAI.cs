@@ -13,6 +13,7 @@ public class BossAI : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         timer = cooldown;
         speed = 3;
         rotationSpeed = 50;

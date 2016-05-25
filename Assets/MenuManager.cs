@@ -25,7 +25,11 @@ public class MenuManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	
 	}
-	
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
+    }
     public void QuitGame()
     {
         Debug.Log("The game Quit");

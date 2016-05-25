@@ -23,6 +23,7 @@ TagManager:
   - Enemy
   - CharSelect
   - Obstacle
+  - PlayerMaster
   layers:
   - Default
   - TransparentFX
