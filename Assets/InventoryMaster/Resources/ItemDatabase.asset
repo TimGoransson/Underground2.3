@@ -28,7 +28,7 @@ MonoBehaviour:
     itemID: 1
     itemDesc: it's an apple
     itemIcon: {fileID: 21300000, guid: eb5f6e2757c821940b69cf1456f7865a, type: 3}
-    itemModel: {fileID: 125176, guid: 724269244de23ad40b09e7d198340597, type: 2}
+    itemModel: {fileID: 174752, guid: e6c90648e61db83469d7cbbbec973d11, type: 2}
     itemValue: 3
     itemType: 2
     itemWeight: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     itemID: 2
     itemDesc: it's a bottle
     itemIcon: {fileID: 21300000, guid: 49b611e658efbf443b686a4036f74fe3, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 178820, guid: ecda4e7489318a644a593d66c1282ad4, type: 2}
     itemValue: 1
     itemType: 0
     itemWeight: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     itemID: 3
     itemDesc: for more crafting
     itemIcon: {fileID: 21300000, guid: 0626b924325d1c34cafa6b22297f4e4f, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 107562, guid: e475616f4fc7bed4f9cbb129444b65d1, type: 2}
     itemValue: 1
     itemType: 12
     itemWeight: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
     itemID: 4
     itemDesc: Crafting Item
     itemIcon: {fileID: 21300000, guid: 05078f1199caf0d4b9ed84b47cb330cf, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 107536, guid: feca60123ed0ca64a9db6ac02e8d9e2a, type: 2}
     itemValue: 1
     itemType: 0
     itemWeight: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
     itemID: 5
     itemDesc: Regen Component
     itemIcon: {fileID: 21300016, guid: 15efef526e4f8494987b44006254adba, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 156126, guid: a123ef5659fd2ab42a339a848013cf2a, type: 2}
     itemValue: 1
     itemType: 0
     itemWeight: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
     itemID: 6
     itemDesc: For Lifesteal
     itemIcon: {fileID: 21300000, guid: 902e87e86233fb94287940a845d16254, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 172392, guid: 729982e498cab2b439e68e1d15e26de2, type: 2}
     itemValue: 1
     itemType: 0
     itemWeight: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     itemID: 7
     itemDesc: For Bow
     itemIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 104838, guid: 81911130c556b934b8d1b1451b590142, type: 2}
     itemValue: 1
     itemType: 0
     itemWeight: 0

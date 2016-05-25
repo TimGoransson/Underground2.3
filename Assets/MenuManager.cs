@@ -85,12 +85,7 @@ public class MenuManager : MonoBehaviour {
         healthValue = CanvasCharScreen.transform.GetChild(2).GetChild(0).GetComponent<Text>();
         healthValue.text = ("" + health);
     }
-    public void Mana(GameObject CanvasCharScreen)
-    {
-        mana = Random.Range(30, 50);
-        manaValue = CanvasCharScreen.transform.GetChild(3).GetChild(0).GetComponent<Text>();
-        manaValue.text = ("" + mana);
-    }
+    
     
 	// Update is called once per frame
 	void Update () {

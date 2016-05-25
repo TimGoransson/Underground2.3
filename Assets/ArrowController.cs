@@ -25,11 +25,11 @@ public class ArrowController : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-
         fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage 
             + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().Str;
         if (other.collider.tag == "Enemy")
         {
+            
             other.collider.SendMessageUpwards("Damage", fullDamage);
             Destroy(gameObject);
             Debug.Log("damage = " + fullDamage);

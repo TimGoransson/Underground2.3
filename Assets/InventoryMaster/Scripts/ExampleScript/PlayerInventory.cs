@@ -162,6 +162,7 @@ public class PlayerInventory : MonoBehaviour
 
     void Awake()
     {
+        
         maxHealth = MenuManager.health;
         maxMana = MenuManager.mana;
         currentHealth = MenuManager.health;
@@ -177,7 +178,7 @@ public class PlayerInventory : MonoBehaviour
 
             manaText = HPMANACanvas.transform.GetChild(2).GetChild(0).GetComponent<Text>();
             manaImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
-            UpdateManaBar();
+           
 
             
         }
@@ -199,20 +200,19 @@ public class PlayerInventory : MonoBehaviour
         
     }
 
+    
+    
     public void UpdateHPBar()
     {
+        DexHealth();
         float fillAmount = currentHealth / maxHealth;
         hpImage.fillAmount = fillAmount;
-        hpText.text = (currentHealth + "/" + maxHealth);
+        
+        hpText.text = (Mathf.Round(currentHealth) + "/" + maxHealth);
+        
     }
 
-    public void UpdateManaBar()
-    {
-        manaText.text = (currentMana + "/" + maxMana);
-        float fillAmount = currentMana / maxMana;
-        manaImage.fillAmount = fillAmount;
-    }
-
+   
 
     public void OnConsumeItem(Item item)
     {
@@ -250,11 +250,18 @@ public class PlayerInventory : MonoBehaviour
         }
         if (HPMANACanvas != null)
         {
-            UpdateManaBar();
+           
             UpdateHPBar();
         }
     }
 
+    void DexHealth()
+    {
+        if (MenuManager.SelectedSword)
+        {
+            maxHealth = MenuManager.health + Dex;
+        }
+    }
     public void OnGearItem(Item item)
     {
         for (int i = 0; i < item.itemAttributes.Count; i++)
@@ -270,10 +277,15 @@ public class PlayerInventory : MonoBehaviour
             if (item.itemAttributes[i].attributeName == "MaxHealth")
                 maxHealth += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Dexterity")
+            {
                 if ((Dex + item.itemAttributes[i].attributeValue) > maxDex)
                     Dex = maxDex;
                 else
                     Dex += item.itemAttributes[i].attributeValue;
+                
+                
+            }
+            
             if (item.itemAttributes[i].attributeName == "Strength")
                     Str += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "LifeSteal")
@@ -287,7 +299,6 @@ public class PlayerInventory : MonoBehaviour
         }
         if (HPMANACanvas != null)
         {
-            UpdateManaBar();
             UpdateHPBar();
         }
     }
@@ -316,7 +327,6 @@ public class PlayerInventory : MonoBehaviour
         }
         if (HPMANACanvas != null)
         {
-            UpdateManaBar();
             UpdateHPBar();
         }
     }
@@ -335,7 +345,6 @@ public class PlayerInventory : MonoBehaviour
         {
             
             Debug.Log("take dmg");
-            UpdateManaBar();
             UpdateHPBar();
         }
         if (currentHealth <= 0)
@@ -347,6 +356,15 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(lifeSteal && currentHealth + lifeStealValue <= maxHealth)
+        {
+            currentHealth += (lifeStealValue / 500);
+
+            UpdateHPBar();
+           
+
+        }
         if (Input.GetKeyDown(inputManagerDatabase.CharacterSystemKeyCode))
         {
             if (!characterSystem.activeSelf)
@@ -360,6 +378,8 @@ public class PlayerInventory : MonoBehaviour
                 characterSystemInventory.closeInventory();
             }
         }
+
+
 
         if (Input.GetKeyDown(inputManagerDatabase.InventoryKeyCode))
         {

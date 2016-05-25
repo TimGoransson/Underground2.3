@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
         if (stats.currentHealth <= 0)
         {
             Destroy(gameObject);
-            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), Random.Range(1,8));
         }
         if (statusIndicator != null)
         {
@@ -77,11 +77,7 @@ public class Enemy : MonoBehaviour
     public void Damage(int damage)
     {
             stats.currentHealth -= damage;
-            if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeSteal == true)
-            {
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().currentHealth += GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().lifeStealValue;
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().UpdateHPBar();
-                Debug.Log("Lifesteal");
-            }
+
+           
     }
 }

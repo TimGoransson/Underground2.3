@@ -7,7 +7,7 @@ public class arm_to_mouse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Vector2 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         difference.Normalize();
 
         float rotationZ = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
