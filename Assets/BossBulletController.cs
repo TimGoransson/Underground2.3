@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BossBulletController : MonoBehaviour {
+public class BossBulletController : MonoBehaviour
+{
 
     public int damage = 5;
     public float speed;

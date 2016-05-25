@@ -67,7 +67,7 @@ public class Breakable : MonoBehaviour
         if (stats.currentHealth <= 0)
         {
             Destroy(gameObject);
-            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), 1);
+            lootSpawner.DropLoot(new Vector2(this.transform.position.x, this.transform.position.y), Random.Range(1,8));
         }
         if (statusIndicator != null)
         {
